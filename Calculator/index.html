@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+
+        <!-- External css -->
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+        <!-- Navbar -->
+        <section id="nav_section">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">SipSome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#nav_section">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sip_calculator">SIP Calculator</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#lumpsome_calculator">LumpSome Calculator</a>
+                </li>
+              </ul>
+            </div>
+         </nav>
+        
+
+    
+          <div class="info">
+            <h2>Open a free Demat account and Invest in Stocks and Mutual Funds.</h2>
+            <a href="https://groww.app.link/refe/hritick9824555" target="_blank"><button class="btn btn-dark btn-lg download">Open Account</button></a>
+          </div>
+        </section> 
+       
+
+        <section id="sip_calculator">
+            <div class="container-fluid">
+                <h1>SIP Calculator</h1>
+                <form action="" method="get" class="form-example">
+                  <table>
+                    <tr class="form-item">
+                      <td>Monthly Investment(Rs)</td>
+                      <td>
+                        <input type="number" name="amount" placeholder="25000" min="500" max="1000000" id="sip-amount" required>
+                      </td>
+                    </tr>
+                    <tr class="form-item">
+                      <td>Time Period(Yrs)</td>
+                      <td><input type="number" name="time" id="sip-time" placeholder="2" min="1" max="70" required></td>
+                    </tr>
+                    <tr class="form-item">
+                      <td>Annual Return(%)</td>
+                      <td><input type="number" name="rate" id="sip-rate" placeholder="7" min="4" max="50" required></td>
+                    </tr>
+                    
+                  </table>
+                  <div class="form-item cal-input">
+                    <button class="btn btn-dark btn-lg" type="button" onclick="sip()">Calculate</button>
+                  </div>
+                  <table class="result">
+                    <tr>
+                      <td>Invested Amount= </td>
+                      <td id="sipInvestedAmount"> ₹ 600000</td>
+                    </tr>
+                    <tr>
+                      <td>Total Value= </td>
+                      <td id="sipTotalReturn"> ₹ 645771</td>
+                    </tr>
+                  </table>
+                </form>
+                
+                
+            </div>
+        </section>
+
+        <section id="lumpsome_calculator">
+          <div class="container-fluid">
+              <h1>LumpSome Calculator</h1>
+              <form action="" method="get" class="form-example">
+                <table>
+                  <tr class="form-item">
+                    <td>Investment Amount(Rs)</td>
+                    <td>
+                      <input type="text" name="name" placeholder="200000" min="10000" max="10000000" id="lump-amount" required>
+                    </td>
+                  </tr>
+                  <tr class="form-item">
+                    <td>Time Period(Yrs)</td>
+                    <td><input type="number" name="time" placeholder="2" min="1" max="50"  id="lump-time" required></td>
+                  </tr>
+                  <tr class="form-item">
+                    <td>Annual Return(%)</td>
+                    <td><input type="number" name="rate" placeholder="6" min="4" max="50" id="lump-rate" required></td>
+                  </tr>
+                  
+                </table>
+                <div class="form-item cal-input">
+                  <button class="btn btn-dark btn-lg" onclick="lumpsome()" type="button">Calculate</button>
+                </div>
+                <table class="result">
+                  <tr>
+                    <td>Invested Amount= </td>
+                    <td id="lumpInvestedAmount"> ₹ 200000</td>
+                  </tr>
+                  <tr>
+                    <td>Total Value= </td>
+                    <td id="lumpTotalReturn"> ₹ 224720</td>
+                  </tr>
+                </table>
+              </form>
+              
+              
+          </div>
+      </section>
+      <section id="footer">
+        <footer>
+          <a href="https://twitter.com/messages/compose"><i class="fas fa-envelope fa-2x"></i></a>
+          <p>Made with ❤️,by HJ</p>
+          <span>&#169 Copyright-2021</span>
+        </footer>
+      </section>
+
+      <script src="index.js"></script>
+    </body>
+</html>

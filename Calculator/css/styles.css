@@ -1,0 +1,105 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Dela Gothic One', cursive;
+    margin-bottom: 5%;
+    font-size: 4rem;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Info */
+
+.info{
+    padding: 40px;
+    height: 400px;
+}
+.download{
+    color: #fff;
+    margin-top: 2rem;
+}
+h2{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 40px 0;
+}
+/* Navbar */
+
+#nav_section{
+    background-color: #5F939A;
+}
+
+.navbar {
+    padding: 0 0 1rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2% 10% 0 10%;
+}
+.nav-item {
+    padding:0 20px;
+    margin: 4% 10% 0 10%;
+}
+.nav-link {
+    font-size: 1.5rem;
+    font-family: "Montserrat-Light";
+}
+
+.container-fluid{
+    padding: 5%;
+}
+.form-item{
+    margin: 4rem;
+    font-size: 1.5rem;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+}
+input{
+    width: 75%;
+}
+.cal-input{
+    width: 25%;
+    margin: 20px auto;
+}
+
+/* Sip Calculator */
+
+#sip_calculator {
+    background-color: #F9F9F9;
+}
+
+/* Lumpsome calculator */
+#lumpsome_calculator {
+    background-color: #5F939A;;
+}
+
+#footer{
+    padding: 3%;
+    background-color: #EFEFEF;
+}
+#footer p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+a{
+    color: black;
+}
+a:hover{
+    color: cadetblue;
+}
+/* result section */
+
+.result{
+    font-size: 2rem;
+    border: 2px solid;
+    margin-top: 3rem;
+}
